@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Consensus</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+        <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/bignumber.js/bignumber.min.js"></script>
+		<script src="bower_components/web3/dist/web3.min.js"></script>
+    </head>
+    <body>
+        
+        <div></div>
+
+
+        <div class="container">
+        	<div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h1 class=" white banner"><b>Movie Consensus</b></h1>
+                </div>
+                <div class="card-block">
+                    <form class="form" role="form" id="movieSubmission" autocomplete="off">
+                        <fieldset>
+                            <label for="name1" class="white banner mb-0">Name</label>
+                            <div class="row mb-1">
+                                <div class="col-lg-12">
+                                    <input type="text" name="movieName" id="movieName" class="form-control" required="">
+                                </div>
+                            </div>
+                            <label for="entry1" class="white banner mb-0">IMDB Link</label>
+                            <div class="row mb-1">
+                                <div class="col-lg-12">
+                                    <input type="link" name="imdbLink" id="imdbLink" class="form-control" required="">
+                                </div>
+                            </div>
+                            <label for="entry2" class="white banner mb-0">Image Link</label>
+                            <div class="row mb-1">
+                                <div class="col-lg-12">
+                                    <input type="link" name="imageLink" id="imageLink" class="form-control" required="">
+                                </div>
+                            </div>
+                            
+                            <br/>
+                            <button type="submit" class="btn btn-primary btn-lg float-right">Request Review</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+		</div>
+
+		<br>
+
+        <div id="mainLoader">
+            <div class="main_loader">
+                <img src="https://loading.io/spinners/flat-ball/lg.flat-bouncing-circle-loading-icon.gif">
+                <br>
+                <div class="white">I N C O M I N G</div>
+            </div>
+        </div>
+
+		<div id="movieContainer" class="row">
+			<!-- <div class="col-md-6">
+				<div class="movie_box" >
+					<img src="http://moviehole.net/img/jumanji-cast.jpg" class="img-fluid rounded">
+					<h3>Name : <span class="name"> Jumanji </span></h3>
+					<a href="http://www.imdb.com/title/tt2283362/"> IMDB link</a>
+					<div class="comment_box">
+						<div class="comment_container" data="99">
+							<h4 class="commenter_name"> Rajat</h4>
+							<p class="comment_content">
+								It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							</p>
+						</div>
+					</div>
+					<br>
+					<div class="comment_submit" data="99">
+						<form class="commentSubmission">
+							<input type="text" placeholder="Name" name="comment_name" id="commenterName" class="form-control" required="">
+							<br>
+							<textarea rows="5" cols="52"></textarea>
+							<button type="submit" class="btn btn-primary">comment</button>
+						</form>
+					</div>
+				</div>
+			</div> -->
+		</div>
+         
+        <script src="js/index.js"></script>
+    </body>
+</html>
