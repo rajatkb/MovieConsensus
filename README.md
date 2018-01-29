@@ -1,4 +1,5 @@
 # Movie Consensus
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)     [![HitCount](http://hits.dwyl.io/rajatthepagal/MovieConsensus.svg)](http://hits.dwyl.io/rajatthepagal/MovieConsensus)
 
 It is a demo decentralised application for requesting movie reviews and commenting on the movie card as reviews. The application itself is hosted from a Google Clous Network compute engine. The application contacts with a Smart contract that is hosted in the Ethereum blockchain network. Currently it is hosted over the Rinkeby network. Since Rinkeby is a test network anyone can get eth for publishing reviews over the application. The smart contract are written using solidity and once deployed are immutable. That means now this application belongs to its users. Remember you will need eth to add new data to the smart contract. We will discuss all of these in a while.
 
