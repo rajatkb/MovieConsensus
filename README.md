@@ -6,7 +6,18 @@ This project is part of my internship project at [TechVariable](http://techvaria
 
 ## Getting Started
 
-First we need to get clear with the model of how blockchain works.
+First we need to get clear with the model of how blockchain works.  
+There is this nice video from 3blue1brown.[How cryptocurrency work](https://www.youtube.com/watch?v=bBC-nXj3Ng4)  
+Also just for understanding of 256bit SHA that sits at the heart of crypto currency.[SHA 256](https://www.youtube.com/watch?v=S9JGmA5_unY)  
+Since breaking it is computationally hard. Pssst ever heard Quantum computing.  
+
+Now if you are clear with crypto currency and what mining is all about we can start with understanding what Ethereum is.
+In theory Ethereum is also a blockchain implementation that has all the capabilities of the BitCoin i.e first generation of blockchains. Ya there are three generation of them. Ethereum stands in the second one. The second generation of cryptocurrency supports programmable agreement of blockchain state. This is also called the <b>SMART CONTRACT</b>.  
+
+This is Vitalik Buterin exmplaining Ethereum [Ethereum](https://www.youtube.com/watch?v=TDGq4aeevgY)  
+
+If you didn't get that then know this Ethereum blockchain nodes i.e the client application running on any computer connected to the internet have the ability to run scripts on its own Ethereum Virtual Machine. EVM is capable of running scripts written in the Solidity language.  
+
 
 
 ### Prerequisites
