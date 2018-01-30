@@ -104,13 +104,71 @@ For having deployed on your own testrpc
   ```
 Then point metamask to locahost:8454  
 
-```
-until finished
-```
+This covers up having this applications frontend deployed on any server or even on own personal network.  
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+But we also need to have the smart contract deployed. The smart contract that governs the transaction rule in the  
+blockchain is to be deployed as follows
+
+* Get the Remix editor and open the movie.sol file in it. You should have the movie.sol in its editor pane
+
+* Compile it. Its in autocompile most of the times , but just to be double sure of any errors. Because once deployed  
+  and mined your contract will remain the part of the blockchain forever and ever with its designated address.
+  
+* In the <b>Run</b> panel to the top right corner you can find all the option regarding which web3 provider do you intend  
+  to use how much gas you want to give for the contract or which account to use. If using this through Metamask which is  
+  which again is highly recommended because otherwise you will need to set up your own clients. 
+  
+* Configure the above sections and then click on create. That will generate the contract as a block transaction in the  
+  the network and you must pay with eth for deploying it.  
+
+* Wait for few minutes or hours !!! It will be mined and your contract will be deployed with a particular address. You can  
+  find this address to the right bottom corner of <b>Run</b> panel. This address is important. Because it will allow you  
+  to interact with your contract through web3.js.
+  
+That is all about Deploying the contract and the application.
+
+## Development
+
+If you are familiar with the above procedures and have done them successfully I believe you can start developing your own  
+your own applications. 
+
+I would advice to look at few of these links they should augment your understanding of DAPs a lot  
+
+* [Ethereum Builders](https://ethereumbuilders.gitbooks.io/guide/content/en/index.html)  
+* [Solidity event interactions](https://zupzup.org/smart-contract-interaction/)
+* [Ethereums official doc for solidity and smart contracts](http://www.ethdocs.org/en/latest/contracts-and-transactions/index.html)  
+
+<img src="http://web3j.readthedocs.io/en/stable/_images/web3j_transaction.png"/>  
+
+Have a look at the above image. It should a clear understanding from a standpoint of traditional developer of web services who have been working on centralised servers till date.
+
+### Bugs and Stuff
+
+Yes they are annoying and get on your nerves. The ethereum VM language is not highly mature when it comes to sending data  
+From limitation of sending two dimensional data to having querry repeated times for array of data at times.You can send  
+fixed size arrays but when was the last time it happened in a dynamic system where users and data content is increasing.  
+
+Here are few links of common bugs
+
+* [SSHin into GCN console and you find geth is running/not running unexpectedly](https://ethereum.stackexchange.com/questions/10679/when-my-app-disconnects-from-remote-geth-does-it-mean-it-lose-whole-sync-informa)
+
+* [When you want web3.js badly as single script](https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.min.js). Finding the  
+  cdn was hard even though it shouldn't have been.  
+
+* [Public and private data](https://ethereum.stackexchange.com/questions/7557/syntax-for-calling-contract-state-changing-methods). In case you are not a Object Oriented guy with view control you are in for the show. Sarcastically !!.  
+
+* [The dreaded issue of Metamask not receiving events](https://github.com/MetaMask/metamask-extension/issues/2393#issuecomment-351291768).  
+  The solution ? Do not change your network in metamask while browsing this actually fails to load some state variables  
+  hence it fails to get the event logs of the new network. i.e if you want to shift from testrpc(localhost:8545) to  
+  ethereum network , do so and then restart browser otherwise Metamask bugs out and wont show event logs or capture them.  
+  Also Meta mask currently captures events twice. Its a bounty !!  
+
+* ---- You are welcome to add more ----
+
+
+
 
 ## Built With
 
